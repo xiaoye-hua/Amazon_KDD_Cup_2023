@@ -8,6 +8,12 @@ packages = [{include = "kdd_2023"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+jupyter = "^1.0.0"
+numpy = "^1.24.2"
+pandas = "^2.0.0"
+aicrowd-cli = "^0.1.15"
+pyarrow = "^11.0.0"
+gensim = "^4.3.1"
 
 
 [build-system]
