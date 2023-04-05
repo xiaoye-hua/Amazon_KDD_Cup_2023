@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "kdd-2023"
+version = "0.1.0"
+description = ""
+authors = ["Hua Guo <huag@kth.se>"]
+readme = "README.md"
+packages = [{include = "kdd_2023"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
