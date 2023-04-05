@@ -25,6 +25,18 @@ toml = ">=0.10.2,<1"
 tqdm = ">=4.56.0,<5"
 
 [[package]]
+name = "annoy"
+version = "1.17.1"
+description = "Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/saving to disk."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "annoy-1.17.1-cp39-cp39-macosx_10_12_universal2.whl", hash = "sha256:d15f03c8986f0d48244843cbfd706b4530047edb1700de463d034e8d10c89dbf"},
+    {file = "annoy-1.17.1.tar.gz", hash = "sha256:bf177dbeafb81f63b2ac1e1246b1f26a2acc82e73ba46638734d29d8258122da"},
+]
+
+[[package]]
 name = "anyio"
 version = "3.6.2"
 description = "High level compatibility layer for multiple asynchronous event loop implementations"
@@ -1445,6 +1457,39 @@ docs = ["furo (>=2022.12.7)", "proselint (>=0.13)", "sphinx (>=6.1.3)", "sphinx-
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.2.2)", "pytest-cov (>=4)", "pytest-mock (>=3.10)"]
 
 [[package]]
+name = "polars"
+version = "0.16.18"
+description = "Blazingly fast DataFrame library"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "polars-0.16.18-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:ee471d3f79daf93e7b0a5412a25473fdc27b59caa05d3baeb786e2022f0e16b0"},
+    {file = "polars-0.16.18-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:bee894337be02706056e17248a361d8b2aeb59971ddc04d0a2be2df568977846"},
+    {file = "polars-0.16.18-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:674645118122c0ddd93668735d736a080290f5d2de1ea9a751f3639a331a4784"},
+    {file = "polars-0.16.18-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ed6d2b07a43baf1563a68beb88b9a561f41967815fd57c9682aaac4502ee4499"},
+    {file = "polars-0.16.18-cp37-abi3-win_amd64.whl", hash = "sha256:eaeba3902d6a412eb2986c2477387cc400f1502abd22cf79b2cc32b435d8abe4"},
+    {file = "polars-0.16.18.tar.gz", hash = "sha256:221125b1e1d043d13d889c336ba1f592ed8f150ec06124067e72e40600b3c96a"},
+]
+
+[package.dependencies]
+typing_extensions = {version = ">=4.0.1", markers = "python_version < \"3.11\""}
+
+[package.extras]
+all = ["polars[connectorx,deltalake,fsspec,matplotlib,numpy,pandas,pyarrow,sqlalchemy,timezone,xlsx2csv,xlsxwriter]"]
+connectorx = ["connectorx"]
+deltalake = ["deltalake (>=0.8.0)"]
+fsspec = ["fsspec"]
+matplotlib = ["matplotlib"]
+numpy = ["numpy (>=1.16.0)"]
+pandas = ["pandas", "pyarrow (>=4.0.0)"]
+pyarrow = ["pyarrow (>=4.0.0)"]
+sqlalchemy = ["pandas", "sqlalchemy"]
+timezone = ["backports.zoneinfo", "tzdata"]
+xlsx2csv = ["xlsx2csv (>=0.8.0)"]
+xlsxwriter = ["xlsxwriter"]
+
+[[package]]
 name = "prometheus-client"
 version = "0.16.0"
 description = "Python client for the Prometheus monitoring system."
@@ -2268,4 +2313,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "ab81e08632276c390534491557b6d399c3fc8a19aa7953fc76f3200c08325aa7"
+content-hash = "2b236ed78d7658a3b2395cfc3d7f0bed04f34e3ba5996fa97778919f7fc166c6"
