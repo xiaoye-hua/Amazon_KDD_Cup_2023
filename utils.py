@@ -24,6 +24,12 @@ def process_item_lst(row):
     return res
 
 
+def str2list(x):
+    x = x.replace('[', '').replace(']', '').replace("'", '').replace('\n', ' ').replace('\r', ' ')
+    l = [i for i in x.split() if i]
+    return l
+
+
 
 def check_predictions(predictions,test_sessions, check_products=False, product_df=None):
     """

@@ -30,10 +30,12 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
         3. [ ] include the target in traing data
         3. [ ] fallback logics
     2. [x] u2i (ALS)
-        1. [ ] item similarity or sth??
+        1. [ ] re-run & save model
+        2. [ ] eval recall@100 of model
+        2. [ ] item similarity or sth?
     3. next item statistics
         1. [ ] include weights in model 
-        2. [ ] popularity fallback
+        2. [ ] popularity fallback -> low opportunity (less than 1% )
             1. [ ] check opportunity
             2. [ ] filter by country
             2. [ ] filter by product cate
@@ -41,10 +43,17 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
     
 2. Rank
     1. [ ] rule-based as first version
+    2. Model based
+        1. Features
+            1. [x] source of candidate generationd
+            2. [ ] similarity between item sequ (last item) and target item (word2vector)
+            2. [ ] scores based on next_item_counter 
 3. Others
     1. Text info
         2. [ ] Text info (text and title info)
         1. [ ] text embedding as features
+        3. [ ] a unique session ID for both train & test?
+        4. [ ] there are new items from next_item from train_df??df
 
 
 ## Rank
