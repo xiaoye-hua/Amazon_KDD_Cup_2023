@@ -28,7 +28,7 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
         1. [x] only keep specific country
         2. [x] train & test data both included 
         3. [ ] include the target in traing data
-        3. [ ] fallback logics
+        3. [ ] fallback logics, unseen key in W2V
     2. [x] u2i (ALS)
         1. [ ] re-run & save model
         2. [ ] eval recall@100 of model
