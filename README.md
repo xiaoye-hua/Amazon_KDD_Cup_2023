@@ -23,7 +23,11 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
 
 1. Metrics:
     1. Recall@100
-2. Plans & steps
+2. Data explore
+    1. [ ] cold start status
+    2. [ ] case study
+        2. [ ] save eval data and anlyze
+2. CG
     1. [x] i2i
         1. [x] only keep specific country
         2. [x] train & test data both included 
@@ -42,12 +46,16 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
     3. [ ] popular item in the same category
     
 2. Rank
-    1. [ ] rule-based as first version
+    1. ~~[ ] rule-based as first version~~
     2. Model based
         1. Features
             1. [x] source of candidate generationd
-            2. [ ] similarity between item sequ (last item) and target item (word2vector)
-            2. [ ] scores based on next_item_counter 
+            2. [x] similarity between item sequ (last item) and target item (word2vector)
+            2. [x] scores based on next_item_counter 
+            3. [ ] 
+        2. Downsampling
+            1. [ ] fraction ??
+            2. 
 3. Others
     1. Text info
         2. [ ] Text info (text and title info)
