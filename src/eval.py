@@ -56,9 +56,9 @@ def model_eval(target_df):
     )
     final_res = eval_final.select(
             pl.count().alias('total_sessions')
-            , pl.col('mrr').mean()
-            , pl.col('recall@20').mean()
-            , pl.col('recall@100').mean()
+            , pl.col('mrr').mean().round(4)
+            , pl.col('recall@20').mean().round(4)
+            , pl.col('recall@100').mean().round(4)
 
         ).collect()
     return final_res

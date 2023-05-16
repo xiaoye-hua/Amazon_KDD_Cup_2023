@@ -20,6 +20,7 @@ implicit = "^0.6.2"
 scikit-learn = "^1.2.2"
 pandas = "^2.0.0"
 lightgbm = "^3.3.5"
+memory-profiler = "^0.61.0"
 
 
 [build-system]

@@ -78,3 +78,27 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
 
 1. [x] check previous trivago session-based competition
 
+
+
+../data/rank_train_data_v2/train/part_1.parquet
+Validating
+(28566071, 11)
+Memory: 2.23475506529212
+0.005130737090165463
+shape: (7, 4)
+┌────────────┬──────────────┬───────────┬────────────┐
+│ describe   ┆ session_id   ┆ rec_cnt   ┆ target_num │
+│ ---        ┆ ---          ┆ ---       ┆ ---        │
+│ str        ┆ f64          ┆ f64       ┆ f64        │
+╞════════════╪══════════════╪═══════════╪════════════╡
+│ count      ┆ 146565.0     ┆ 146565.0  ┆ 146565.0   │
+│ null_count ┆ 0.0          ┆ 0.0       ┆ 0.0        │
+│ mean       ┆ 81754.567209 ┆ 194.90377 ┆ 1.0        │
+│ std        ┆ 47232.319874 ┆ 96.523984 ┆ 0.0        │
+│ min        ┆ 0.0          ┆ 80.0      ┆ 1.0        │
+│ max        ┆ 163580.0     ┆ 468.0     ┆ 1.0        │
+│ median     ┆ 81763.0      ┆ 154.0     ┆ 1.0        │
+└────────────┴──────────────┴───────────┴────────────┘
+  5%|▌         | 1/20 [22:21<7:04:44, 1341.26s/it]
+
+../data/rank_train_data_v2/train/part_2.parquet
