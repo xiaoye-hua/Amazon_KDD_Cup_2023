@@ -11,7 +11,7 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
 1. Structure 
     1. Candidate generation
     2. Rank
-        1. [ ] rule-based as first version
+        1. [x] rule-based as first version
 2. [ ] Text info (text and title info)
     1. [ ] text embedding as features
  
@@ -41,10 +41,11 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
         2. [ ] item similarity or sth?
     3. next item statistics
         1. [x] include weights in model 
-        2. [ ] popularity fallback -> low opportunity (less than 1% )
-            1. [ ] check opportunity
+        2. [x] popularity fallback -> low opportunity (less than 1% ) 
+            1. [x] check opportunity
             2. [ ] filter by country
             2. [ ] filter by product cate
+    4. Next Few Item (NFI)
     3. More co-visit statistics
     3. [ ] popular item in the same category
     
@@ -55,7 +56,7 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
             1. [x] source of candidate generationd
             2. [x] similarity between item sequ (last item) and target item (word2vector)
             2. [x] scores based on next_item_counter 
-            3. [ ] similarity score between viewed items and current item
+            3. [x] similarity score between viewed items and current item
         2. Downsampling
             1. [x] fraction -> 0.1 for now
             2. [ ] sample based on session or in all data??
@@ -65,8 +66,8 @@ Compared to [OTTO – Multi-Objective Recommender System competition](https://ww
     1. Text info
         2. [ ] Text info (text and title info)
         1. [ ] text embedding as features
-        3. [ ] a unique session ID for both train & test?
-        4. [ ] there are new items from next_item from train_df??df
+        3. [x] a unique session ID for both train & test?
+        4. [x] there are new items from next_item from train_df??df
 
 
 ## Rank

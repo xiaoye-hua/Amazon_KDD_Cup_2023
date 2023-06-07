@@ -49,8 +49,8 @@ def model_eval(target_df):
                 )
             ).with_columns(
                 pl.col('mrr').arr.sum()
-                , pl.col('next_item_prediction').arr.head(20).arr.contains(pl.col('next_item')).mean().alias('recall@20')
-                , pl.col('next_item_prediction').arr.head(100).arr.contains(pl.col('next_item')).mean().alias('recall@100')
+                , pl.col('next_item_prediction').arr.head(20).arr.contains(pl.col('next_item')).alias('recall@20')
+                , pl.col('next_item_prediction').arr.head(100).arr.contains(pl.col('next_item')).alias('recall@100')
 
             )
     )
