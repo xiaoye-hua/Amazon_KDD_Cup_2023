@@ -103,3 +103,18 @@ shape: (7, 4)
   5%|▌         | 1/20 [22:21<7:04:44, 1341.26s/it]
 
 ../data/rank_train_data_v2/train/part_2.parquet
+
+
+
+
+# How to run it 
+
+```
+# init the shell
+poetry shell
+
+# freeze the package config
+
+poetry lock
+
+```

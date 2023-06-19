@@ -9,7 +9,6 @@ packages = [{include = "kdd_2023"}]
 [tool.poetry.dependencies]
 python = ">=3.8,<3.10"
 jupyter = "^1.0.0"
-numpy = "^1.24.2"
 aicrowd-cli = "^0.1.15"
 pyarrow = "^11.0.0"
 gensim = "^4.3.1"
@@ -21,6 +20,8 @@ scikit-learn = "^1.2.2"
 pandas = "^2.0.0"
 lightgbm = "^3.3.5"
 memory-profiler = "^0.61.0"
+tensorflow-ranking = "^0.5.2"
+tensorflow-datasets = "^4.9.2"
 
 
 [build-system]
